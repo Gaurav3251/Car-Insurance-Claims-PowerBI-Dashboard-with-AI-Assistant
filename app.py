@@ -345,13 +345,6 @@ def render_sidebar(df: pd.DataFrame) -> None:
             unsafe_allow_html=True,
         )
 
-        st.markdown("### Backend status")
-        if GEMINI_API_KEY:
-            st.success("Gemini key loaded securely from backend config.")
-            st.caption(f"Model fallback order: `{', '.join(get_model_candidates())}`")
-        else:
-            st.error("Missing backend Gemini key.")
-            st.caption("Add GEMINI_API_KEY to `.env` or Streamlit secrets. It is never requested in the UI.")
 
         st.markdown("### Useful questions")
         for question in EXAMPLE_QUESTIONS:
