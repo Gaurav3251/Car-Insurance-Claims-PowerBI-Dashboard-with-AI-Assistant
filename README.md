@@ -1,7 +1,9 @@
 # Car Insurance Claims Analytics Assistant
 
-Streamlit chatbot for the **Smart Financial Data Assistant** assignment. The app reads the local `Car_Insurance_Claim.csv` file, computes claim-risk summaries, and uses Gemini from backend configuration only.
+Streamlit chatbot for the **Car Insurance Claims PowerBI Dashboard** topic. The app reads the local `Car_Insurance_Claim.csv` file, computes claim-risk summaries, and uses Gemini from backend configuration only.
+The chatbot can be questioned in plain English related to dataset and then provides structured answers wih reasoning for results obtained!
 
+- Live chatbot link: https://car-insurance-claims-assistant.streamlit.app/
 
 ## Setup
 
@@ -42,3 +44,20 @@ streamlit run app.py
 - Compare claim risk by vehicle year.
 - Give me 3 business recommendations from this data.
 
+## PowerBI Dashboard Screenshots
+
+1. Landing Page
+
+![Landing Page](screenshots/lp.png)
+
+2. Drillthorugh of Claims Details for Education Column (based on above screenshot)
+
+![Drillthrough](screenshots/dt.png)
+
+3. AI Car Insurance Claims Assistant Link
+
+![Assstant](screenshots/cb.png)
+
+## License
+
+See [LICENSE](LICENSE.txt) 
