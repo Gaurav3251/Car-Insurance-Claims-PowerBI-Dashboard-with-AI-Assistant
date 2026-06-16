@@ -2,12 +2,6 @@
 
 Streamlit chatbot for the **Smart Financial Data Assistant** assignment. The app reads the local `Car_Insurance_Claim.csv` file, computes claim-risk summaries, and uses Gemini from backend configuration only.
 
-## What changed
-
-- No CSV upload widget; the project dataset is already connected from `Car_Insurance_Claim.csv`.
-- No API key field in the frontend; use `.env` or Streamlit secrets.
-- The assistant now focuses on business questions: claim rate, risky customer segments, rankings, comparisons, limitations, and recommendations.
-- The UI explains what the assistant can and cannot answer.
 
 ## Setup
 
@@ -48,8 +42,3 @@ streamlit run app.py
 - Compare claim risk by vehicle year.
 - Give me 3 business recommendations from this data.
 
-## Known limitations
-
-- The dataset does not include premium amount, claim amount, profit, customer tenure, or exact accident dates.
-- The assistant can explain correlations, but it cannot prove causation.
-- Geographic analysis is limited to `Postal Code`.
